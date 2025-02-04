@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Serviços odontológicos de alta qualidade. Atendimento personalizado com profissionais experientes.">
+    <title>Clínica Odontológica - Seu Sorriso é Nossa Prioridade</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="formulario.js" defer></script>
+</head>
+<body>
+    <header>
+        <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="about">
+        <div class="about-content">
+            <img src="hero.png" alt="Consultório Odontológico" class="about-image">
+            <div class="about-text">
+                <h2>Sobre Nós</h2>
+                <h3>Serviços de Atendimento Odontológico</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <a href="https://wa.me/SEUNUMERO" class="btn-schedule">Agende sua consulta</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="inicio" class="hero">
+        <h1>Serviço de atendimento odontológico</h1>
+        <p>Cuidamos do seu sorriso com excelência e dedicação</p>
+    </section>
+
+    <section class="services">
+        <h2>Nossos Serviços</h2>
+        <div class="services-grid">
+            <!-- Previous service cards plus new ones -->
+            <div class="service-card">
+                <i class="fas fa-tooth"></i>
+                <h3>Dentaduras</h3>
+                <p>Soluções protéticas personalizadas</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-teeth"></i>
+                <h3>Extrações</h3>
+                <p>Procedimentos seguros e precisos</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-hand-holding-medical"></i>
+                <h3>Tratamento para Gengivas</h3>
+                <p>Cuidados periodontais especializados</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-smile-beam"></i>
+                <h3>Clareamento Dentário</h3>
+                <p>Técnicas modernas para um sorriso mais branco</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="who-am-i">
+        <div class="who-am-i-content">
+            <h2>Quem Sou Eu</h2>
+            <h3>Especialista em Saúde Bucal</h3>
+            <p>Formado em XXXX, especialista em xxxx.
+                Formado em XXXX, especialista em xxxx.
+                Formado em XXXX, especialista em xxxx.
+                Formado em XXXX, especialista em xxxx. </p>
+            <div class="dentist-image-container">
+                <img src="dentista.png" alt="Dentista" class="dentist-image">
+                <div class="dentist-info">
+                    <h3>Dr. Nome do Dentista</h3>
+                    <a href="https://wa.me/SEUNUMERO" class="btn-schedule btn-schedule-inverse">Agende sua consulta</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="contact-content">
+            <div class="form-container">
+                <h2>Solicite um Orçamento</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telefone</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn-schedule-inverse">Enviar</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h2>Redes Sociais</h2>
+                <div class="social-links">
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+                <h3>Contato</h3>
+                <p>Telefone: (XX) XXXX-XXXX</p>
+                <p>Endereço: Sua Rua, Número - Bairro, Cidade - Estado</p>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.356219020248!2d-43.18340548503453!3d-22.906447785015295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDU0JzIzLjIiUyA0M8KwMTAnNTUuMSJX!5e0!3m2!1sen!2sbr!4v1620147382482!5m2!1sen!2sbr"
+                        width="100%"
+                        height="100%"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 - Todos os direitos reservados | Desenvolvido por <a href="https://github.com/seu-usuario" target="_blank">LuizVieira | DEV</a></p>
+    </footer>
+
+    <a href="https://wa.me/SEUNUMERO" class="whatsapp-button" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    
+</body>
+</html>

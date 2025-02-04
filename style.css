@@ -1,0 +1,340 @@
+        :root {
+            --primary-color: #3852ab;
+            --secondary-color: #ffffff;
+            --text-color: #333333;
+            --background-light: #f5f5f5;
+            --background-gray: #c1c1c1;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+
+        .btn-schedule {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn-schedule:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .btn-schedule-inverse {
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+        }
+
+        /* Header Styles */
+        header {
+            background-color: var(--primary-color);
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-toggle {
+            display: none;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        nav ul li {
+            margin-left: 2rem;
+        }
+
+        nav ul li a {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            padding: 8rem 2rem 4rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 4rem 2rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .service-card {
+            text-align: center;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .service-card i {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        /* Contact Form */
+        .contact {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            padding: 4rem 2rem;
+        }
+
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: none;
+            border-radius: 4px;
+            margin-top: 0.5rem;
+        }
+
+        button {
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            padding: 0.8rem 2rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* WhatsApp Button */
+        .whatsapp-button {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background-color: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            z-index: 1000;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-toggle {
+                display: block;
+                font-size: 1.5rem;
+                color: var(--secondary-color);
+                background: none;
+                border: none;
+                cursor: pointer;
+            }
+
+            nav ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: var(--primary-color);
+                padding: 1rem;
+            }
+
+            nav ul.active {
+                display: flex;
+            }
+
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+        }
+    
+
+        /* About Section */
+        .about {
+            background-color: var(--background-light);
+            padding: 6rem 2rem;
+        }
+
+        .about-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .about-text h2 {
+            font-size: 1.5rem;
+            color: var(--text-color);
+            margin-bottom: 1rem;
+        }
+
+        .about-text h3 {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--text-color);
+            margin-bottom: 1.5rem;
+        }
+
+        /* Who Am I Section */
+        .who-am-i {
+            background-color: var(--background-gray);
+            padding: 4rem 2rem;
+        }
+
+        .who-am-i-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .who-am-i h2 {
+            color: var(--primary-color);
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .who-am-i h3 {
+            color: var(--text-color);
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .dentist-image-container {
+            position: relative;
+            max-width: 500px;
+            margin: 2rem auto;
+        }
+
+        .dentist-image {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .dentist-info {
+            position: absolute;
+            bottom: -5rem;
+            right: -2rem;
+            background-color: var(--primary-color);
+            padding: 1.5rem;
+            border-radius: 8px;
+            color: var(--secondary-color);
+        }
+
+        /* Services Grid */
+        .services-grid {
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: var(--primary-color);
+            padding: 4rem 2rem;
+        }
+
+        .contact-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .social-links {
+            margin-top: 2rem;
+        }
+
+        .social-links a {
+            color: var(--secondary-color);
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            text-decoration: none;
+        }
+
+        .contact-info {
+            color: var(--secondary-color);
+            margin-top: 2rem;
+        }
+
+        .map-container {
+            width: 100%;
+            height: 300px;
+            margin-top: 2rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--text-color);
+            color: var(--secondary-color);
+            padding: 1rem;
+            text-align: center;
+        }
+
+        footer a {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .about-content, .contact-content {
+                grid-template-columns: 1fr;
+            }
+
+            .dentist-info {
+                position: relative;
+                right: 0;
+                margin-top: 1rem;
+            }
+        }
